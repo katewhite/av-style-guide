@@ -1,0 +1,56 @@
+button {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: futura-pt;
+	font-weight: 500;
+	border-radius: 5px;
+	border-style: none;
+	cursor: pointer;
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.av-button {
+	color: white;
+	background-color: $blue-text;
+	&:hover {
+		background-color: darken($blue-text, 10);
+	}
+	&:active {
+		color: darken(white, 10);
+	}
+}
+.av-button-inactive {
+	color: $gray-inactive-text;
+	background-color: $gray-inactive-bg;
+}
+.av-button-secondary {
+	background-color: transparent;
+	color: $blue-text;
+	&:hover {
+		color: darken($blue-text, 10);
+	}
+	&:active {
+		color: lighten($blue-text, 10);
+	}
+}
+.av-button-icon {
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    background-color: transparent;
+    color: $blue-text;
+    font-size: 18px;
+    &:hover {
+		color: darken($blue-text, 10);
+	}
+	&:active {
+		color: lighten($blue-text, 10);
+	}
+}

@@ -1,0 +1,41 @@
+h1 {
+	font-family: 'futura-pt-condensed';
+	font-weight: 500;
+	font-size: 44px;
+	color: $blue-text;
+}
+h2 {
+	font-family: 'futura-pt-condensed';
+	font-weight: 500;
+	font-size: 36px;
+	color: $blue-text;
+}
+h3 {
+	font-family: 'futura-pt-condensed';
+	font-weight: 300;
+	font-size: 32px;
+	color: $blue-text;
+	letter-spacing: .5px;
+}
+div.font-family-container {
+	font-size: 24px;
+	div {
+		margin-bottom: 10px;
+    	word-wrap: break-word;
+	}
+}
+.futura-pt-medium-container {
+	font-family: 'futura-pt';
+	font-weight: 500;
+}
+.futura-pt-heavy-container{
+	font-family: 'futura-pt';
+	font-weight: 700;
+}
+.futura-pt-condensed-container{
+	font-family: 'futura-pt-condensed';
+	font-weight: 500;
+}
+.font-family-header {
+	font-size: 36px;
+}

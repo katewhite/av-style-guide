@@ -6,6 +6,17 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net",
+      'font-src': "'self' use.typekit.net p.typekit.net data:",
+      'connect-src': "'self'",
+      'img-src': "'self' p.typekit.net",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net p.typekit.net"
+    },
+    typekit: {
+        kitId: 'kxg8llr'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -18,7 +29,7 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-
+ 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

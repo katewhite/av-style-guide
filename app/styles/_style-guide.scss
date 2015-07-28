@@ -1,0 +1,137 @@
+body {
+	// General
+	padding: 20px;
+	// .flex-horizontal-container {
+	// 	display: -webkit-box;
+	// 	display: -moz-box;
+	// 	display: -ms-flexbox;
+	// 	display: -webkit-flex;
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	align-items: stretch;
+	// 	.flex-horizontal-item {
+	// 		flex: 1;
+	// 	}
+	// }
+	.style-section {
+		margin: 20px;
+		margin-bottom: 100px;
+	}
+	.section-container {
+		margin-top: 50px;
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+	.number-label {
+		font-weight: 100;
+		color: $gray-inactive-text;
+		font-family: 'futura-pt';
+		font-size: 64px;
+	}
+	.section-title {
+		font-weight: 300;
+		font-size: 64px;
+		color: $black-text;
+		font-family: 'futura-pt';
+	}
+	.component-title {
+		text-transform: uppercase;
+	    font-weight: 300;
+	    color: $gray-toolbar;
+	    margin-bottom: 0px;
+	    font-size: 24px;
+	    font-family: futura-pt-condensed;
+	    margin-top: 70px;
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+	.component-container {
+		border: 1px solid $gray-inactive-bg;
+		padding: 20px;
+	}
+	.component-container.row {
+		margin-left: 0px;
+    	margin-right: 0px;
+	}
+
+	// Code Snippets
+	$code-tag: #066b8c;
+	$code-attribute: #869900;
+	$code-attribute-value: #ca4916;
+	$code-content: $gray-toolbar;
+	.code-text {
+		font-family: 'menlo', 'courier new';
+		font-size: 0px;
+		border-radius: 3px;
+	    border: 1px solid $gray-inactive-bg;
+	    
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding: 10px;
+	    background-color: $white-container-bg;
+	    margin-top: 30px;
+		span {
+			font-size: 12px;
+		}
+		.code-tag {
+			color: $code-tag;
+		}
+		.code-attribute {
+			color: $code-attribute;
+		}
+		.code-attribute-value {
+			color: $code-attribute-value;
+		}
+		.code-content {
+			color: $code-content;
+		}
+		.tab-1 {
+			margin-left: 20px;
+		}
+		.tab-2 {
+			margin-left: 40px;
+		}
+		.tab-3 {
+			margin-left: 60px;
+		}
+		.tab-4 {
+			margin-left: 80px;
+		}
+	}
+
+	// Form Controls
+	.av-groupbox-wide, .av-groupbox-thin { 
+		width: 250px;
+		height: 200px;
+	}
+	.av-textbox {
+		width: 250px;
+	}
+	.av-textarea {
+		height: 200px;
+	}
+
+	// Lists
+	.av-list-container {
+		width: 500px;
+	}
+
+	// MEDIA ----------------------------------------------------------------------------------------
+
+	// Add margins between stacked columns (they only stack for md screens since we are using col-md)
+	@media (max-width: $screen-md) {
+		[class*="col-"] {
+			margin-top: 70px;
+			&:first-child {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-sm) {
+		.style-section {
+			margin: 0px;
+		}
+	}
+}

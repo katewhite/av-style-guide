@@ -1,0 +1,104 @@
+.av-groupbox-title, .av-textbox-label, .av-textarea-label {
+	font-size: 18px;
+	font-weight: 700;
+}
+.av-groupbox-wide {
+	border: 2px solid $gray-inactive-text;
+	border-radius: 5px;
+}
+.av-groupbox-thin {
+	border: 1px solid $gray-inactive-text;
+	border-radius: 5px;
+}
+.av-textbox, .av-textarea {
+	border-radius: 5px;
+    border-style: none;
+    border: 1px solid #b7b7b7;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: futura-pt;
+    font-weight: 500;
+    &:focus {
+    	outline: none;
+	    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    -moz-box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    border: solid 1px #5db4be;
+    }
+}
+.av-textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: futura-pt;
+    font-weight: 500;
+    &:focus {
+    	outline: none;
+	    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    -moz-box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    box-shadow: 0 0 8px rgba(0,0,0,.25);
+	    border: solid 1px #5db4be;
+    }
+}
+
+.av-toggle {
+  	display: flex;
+	position: relative;
+	width: 7.5rem;
+	height: 35px;
+	background: white;
+	align-self: center;
+	user-select: none;
+	border: 1px solid $gray-inactive-text;
+	border-radius: 5px;
+	padding-top: 5px;
+	font-weight: 500;
+	input {
+		display: none;
+	}
+}
+.av-toggle:after, .av-toggle:before {
+  flex:1;
+  text-align:center;
+  line-height:2.5rem;
+}
+.av-toggle:after {
+  content:"NO";
+}
+.av-toggle:before {
+  content:"YES";
+}
+label {
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  perspective:1000; 
+  cursor:pointer;
+}
+
+.card {
+	position:relative;
+	background:$gray-inactive-bg;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px; 
+	transition:.4s;
+	width:50%;
+	height:33px;
+	pointer-events:none;
+}
+
+input:checked + label .card { 
+	background:$gray-inactive-bg;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; 
+    border-right: 1px solid $gray-inactive-text;
+    border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px; 
+	border-left: none;
+}
+
+.slide .card { transform:translate(0); }
+.slide input:checked + label .card {
+  transform:translateX(3.75rem);
+}

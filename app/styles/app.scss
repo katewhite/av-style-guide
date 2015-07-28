@@ -1,0 +1,12 @@
+@import "../../node_modules/ember-cli-bootstrap-sass/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "colors";
+@import "typography";
+@import "style-guide";
+@import "buttons";
+@import	"formcontrols";
+@import	"lists";
+
+body {
+	font-family: 'futura-pt', ‘Century Gothic’, AppleGothic, sans-serif;
+}

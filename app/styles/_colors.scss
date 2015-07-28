@@ -1,0 +1,77 @@
+$blue-text: #59b4bf;
+$blue-app-panel: #417380;
+$blue-symapp-panel: #7fa1a9;
+$black-text: #333333;
+$gray-toolbar: #666666;
+$gray-inactive-text: #b7b7b7;
+$gray-inactive-bg: #e0e0e0;
+$white-container-bg: #f5f5f5;
+$blue-light-bg: #dde4e6;
+$red: #cd2c24;
+$green: #819964;
+
+.colors-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-left: 20px;
+	.color-container {
+		position: relative;
+		width: 150px;
+		padding: 20px;
+		text-align: center;
+		.color-square {
+			height: 110px;
+			width: 110px;
+			position: absolute;
+			margin-left: 55px;
+			left: -35px;
+		}
+		.color-square.blue-text {
+			background-color: $blue-text;
+		}
+		.color-square.blue-app-panel {
+			background-color: $blue-app-panel;
+		}
+		.color-square.blue-symapp-panel {
+			background-color: $blue-symapp-panel;
+		}
+		.color-square.black-text {
+			background-color: $black-text;
+		}
+		.color-square.gray-toolbar {
+			background-color: $gray-toolbar;
+		}
+		.color-square.gray-inactive-text {
+			background-color: $gray-inactive-text;
+		}
+		.color-square.gray-inactive-bg {
+			background-color: $gray-inactive-bg;
+		}
+		.color-square.white-container-bg {
+			background-color: $white-container-bg;
+		}
+		.color-square.blue-light-bg {
+			background-color: $blue-light-bg;
+		}
+		.color-square.red {
+			background-color: $red;
+		}
+		.color-square.green {
+			background-color: $green;
+		}
+		.variable-name {
+			margin-top: 120px;
+		}
+		.hex-value {
+			color: $gray-inactive-text;
+  			margin-top: 2px;
+		}
+	}
+}
