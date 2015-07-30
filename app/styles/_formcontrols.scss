@@ -43,6 +43,8 @@
     }
 }
 
+
+// Toggler
 .av-toggle {
   	display: flex;
 	position: relative;
@@ -101,4 +103,35 @@ input:checked + label .card {
 .slide .card { transform:translate(0); }
 .slide input:checked + label .card {
   transform:translateX(3.75rem);
+}
+
+//Checkbox
+.av-checkbox {
+	position: relative;
+	height: 14px;
+	width: 14px;
+	input[type="checkbox"] {
+		display: none;
+	}
+	input[type="checkbox"] + label {
+	    position: absolute;
+		border: 1px solid $gray-inactive-bg;
+	    margin-right: 3px;
+	    width: 14px;
+	    height: 14px;
+	    border-radius: 3px;
+	    background-color: white;
+	    i {
+	    	font-size: 12px;
+		    position: absolute;
+		    display: inline-block;
+		    top: 0px;
+		    color: transparent;
+	    }
+	}
+	input[type="checkbox"]:checked + label {
+	    i {
+		    color: $black-text;
+	    }
+	}
 }
