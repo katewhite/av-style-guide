@@ -24,7 +24,6 @@
     "ember-cli": "1.13.1",
     "ember-cli-app-version": "0.4.0",
     "ember-cli-babel": "^5.0.0",
-    "ember-cli-bootstrap-sass": "^0.2.11",
     "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "^1.0.0",
     "ember-cli-font-awesome": "0.1.0",
@@ -42,6 +41,7 @@
     "ember-template-compiler": "^1.9.0-alpha",
     "handlebars": "^2.0.0",
     "liquid-fire": "^0.21.0",
-    "rimraf": "2.2.8"
+    "rimraf": "2.2.8",
+    "ember-export-application-global": "^1.0.2"
   }
 }
