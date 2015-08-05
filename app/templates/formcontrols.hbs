@@ -1,169 +1,55 @@
-
+<!--Groupbox - Wide -->
 <div class="component-title">Groupbox - Wide</div>
 <div class="component-container">
 	<div class="av-groupbox-title">Title</div>
 	<div class="av-groupbox-wide"></div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-groupbox-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-groupbox-wide"</span>
-			<span class="code-tag">&gt;&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-groupbox-title"&gt;Title&lt;/div&gt;
+&lt;div class="av-groupbox-wide"&gt;&lt;/div&gt;{{/code-block}}
 </div>
+
+<!--Groupbox - Thin -->
 <div class="component-title">Groupbox - Thin</div>
 <div class="component-container">
 	<div class="av-groupbox-title">Title</div>
 	<div class="av-groupbox-thin"></div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-groupbox-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-groupbox-thin"</span>
-			<span class="code-tag">&gt;&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-groupbox-title"&gt;Title&lt;/div&gt;
+&lt;div class="av-groupbox-thin"&gt;&lt;/div&gt;{{/code-block}}
 </div>
+
+<!-- Textbox -->
 <div class="component-title">Text Box</div>
 <div class="component-container">
 	<div class="av-textbox-label">Label</div>
 	<input class="av-textbox">
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-textbox-label"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Label</span>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-textbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-textbox-label"&gt;Label&lt;/div&gt;
+&lt;input class="av-textbox"&gt;{{/code-block}}
 </div>
 
+<!-- Text Area -->
 <div class="component-title">Text Area</div>
 <div class="component-container">
 	<div class="av-textarea-label">Label</div>
 	<textarea class="av-textarea"></textarea>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-textarea-label"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Label</span>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;textarea </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-textarea"</span>
-			<span class="code-tag">&lt;/textarea&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-textarea-label"&gt;Label&lt;/div&gt;
+&lt;textarea class="av-textarea"&gt;&lt;/textarea&gt;{{/code-block}}
 </div>
 
+<!-- Checkbox -->
 <div class="component-title">Checkbox</div>
 <div class="component-container">
-	<div class="av-checkbox">
-		<input type="checkbox" id="checkbox"/>
-		<label for="checkbox">{{fa-icon "check"}}</label>
-	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="code-note">
-			<span>Note: The "id" and "for" attributes of the input and label respectively, must be unique for every checkbox on a given page</span>
-		</div>
-	</div>
+	{{av-checkbox}}
+{{#code-block language='handlebars'}}&#123;&#123;av-checkbox&#125;&#125;{{/code-block}}
 </div>
 
+<!-- Toggle -->
 <div class="component-title">Toggle</div>
 <div class="component-container">
-	<div class="av-toggle slide">
-	  <input id="c" type="checkbox" />
-	  <label for="c">
-	    <div class="card slide"></div>    
-	  </label>
-	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-toggle slide"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"c"</span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"c"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"card slide"</span>
-			<span class="code-tag">&gt;&lt;/div&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{av-toggle option1="Option 1" option2="Option 2"}}
+{{#code-block language='handlebars'}}
+&#123;&#123;av-toggle option1="Option 1" option2="Option 2"&#125;&#125;{{/code-block}}
 </div>
 

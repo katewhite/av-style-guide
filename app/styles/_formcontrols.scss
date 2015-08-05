@@ -44,65 +44,126 @@
 }
 
 
-// Toggler
+// // Toggler
+// .av-toggle {
+//   	display: flex;
+// 	position: relative;
+// 	width: 7.5rem;
+// 	height: 35px;
+// 	background: white;
+// 	align-self: center;
+// 	user-select: none;
+// 	border: 1px solid $gray-inactive-text;
+// 	border-radius: 5px;
+// 	padding-top: 5px;
+// 	font-weight: 500;
+// 	input {
+// 		display: none;
+// 	}
+// }
+// .av-toggle:after, .av-toggle:before {
+//   flex:1;
+//   text-align:center;
+//   line-height:2.5rem;
+// }
+// .av-toggle:after {
+//   content:"NO";
+// }
+// .av-toggle:before {
+//   content:"YES";
+// }
+// label {
+//   position:absolute;
+//   top:0; left:0; right:0; bottom:0;
+//   perspective:1000; 
+//   cursor:pointer;
+// }
+
+// .card {
+// 	position:relative;
+// 	background:$gray-inactive-bg;
+// 	border-bottom-left-radius: 5px;
+// 	border-top-left-radius: 5px; 
+// 	transition:.4s;
+// 	width:50%;
+// 	height:33px;
+// 	pointer-events:none;
+// }
+
+// input:checked + label .card { 
+// 	background:$gray-inactive-bg;
+//     border-bottom-right-radius: 5px;
+//     border-top-right-radius: 5px; 
+//     border-right: 1px solid $gray-inactive-text;
+//     border-bottom-left-radius: 0px;
+// 	border-top-left-radius: 0px; 
+// 	border-left: none;
+// }
+
+// .slide .card { transform:translate(0); }
+// .slide input:checked + label .card {
+//   transform:translateX(3.75rem);
+// }
+
+// My toggle
 .av-toggle {
-  	display: flex;
-	position: relative;
-	width: 7.5rem;
-	height: 35px;
-	background: white;
-	align-self: center;
-	user-select: none;
-	border: 1px solid $gray-inactive-text;
+	display: inline-block;
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    border: 1px solid $gray-inactive-text;
 	border-radius: 5px;
-	padding-top: 5px;
 	font-weight: 500;
-	input {
-		display: none;
+    span.option-1 {
+    	margin-right: 15px;
+    }
+    label {
+		position:absolute;
+		top:0; left:0; right:0; bottom:0;
+		perspective:1000; 
+		cursor:pointer;
 	}
-}
-.av-toggle:after, .av-toggle:before {
-  flex:1;
-  text-align:center;
-  line-height:2.5rem;
-}
-.av-toggle:after {
-  content:"NO";
-}
-.av-toggle:before {
-  content:"YES";
-}
-label {
-  position:absolute;
-  top:0; left:0; right:0; bottom:0;
-  perspective:1000; 
-  cursor:pointer;
-}
+    .toggle-cover {
+	    height: 40px;
+	    position: absolute;
+	    background-color: $gray-inactive-text;;
+	    z-index: 999;
+	    width: 50%;
+	    top: 0px;
+	    border-radius: 3px;
+	    -webkit-transition: .4s;
+	    -moz-transition: .4s;
+	    -o-transition: .4s;
+	    transition: .4s;
+    }
+    .toggle-cover.option-1 {
+    	-webkit-transform: translate(100%, 0);
+	    -moz-transform: translate(100%, 0);
+	    -o-transform: translate(100%, 0);
+	    -ms-transform: translate(100%, 0);
+	    transform: translate(100%, 0);
+	    border-top-left-radius: 0px;
+	    border-bottom-left-radius: 0px;
+    }
+    .toggle-cover.option-2 {
+    	-webkit-transform: translate(0);
+	    -moz-transform: translate(0);
+	    -o-transform: translate(0);
+	    -ms-transform: translate(0);
+	    transform: translate(0);
+	    border-top-right-radius: 0px;
+	    border-bottom-right-radius: 0px;
+    }
+    input {
+    	display: none;
+    }
 
-.card {
-	position:relative;
-	background:$gray-inactive-bg;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px; 
-	transition:.4s;
-	width:50%;
-	height:33px;
-	pointer-events:none;
-}
-
-input:checked + label .card { 
-	background:$gray-inactive-bg;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px; 
-    border-right: 1px solid $gray-inactive-text;
-    border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px; 
-	border-left: none;
-}
-
-.slide .card { transform:translate(0); }
-.slide input:checked + label .card {
-  transform:translateX(3.75rem);
+ //    .toggle-cover.option-1 { 
+ //    	transform:translate(0); 
+ //    }
+	// .toggle-cover input:checked {
+	//   	transform:translateX(3.75rem);
+	// }
 }
 
 //Checkbox
@@ -135,3 +196,5 @@ input:checked + label .card {
 	    }
 	}
 }
+
+

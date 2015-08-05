@@ -1,38 +1,35 @@
 <div class="buttons-container row">
-	<div class="col-md-4">
+	<div class="col-md-3">
 		<div class="component-title">Primary, Active Button</div>
 		<div class="component-container">
 			<button class="av-button">Active</button>
-			<div class="code-text">
-				<span class="code-tag">&lt;button </span>
-				<span class="code-attribute">class=</span>
-				<span class="code-attribute-value">"av-button"</span>
-				<span class="code-tag">&gt;&lt;/button&gt;</span>
-			</div>
+{{#code-block language='handlebars'}}
+&lt;button class="av-button"&gt;Active&lt;/button&gt;{{/code-block}}
 		</div>
 	</div>
-	<div class="col-md-4">
+
+	<div class="col-md-3">
 		<div class="component-title">Inactive (Disabled) Button</div>
 		<div class="component-container">
 			<button class="av-button-inactive">Inactive</button>
-			<div class="code-text">
-				<span class="code-tag">&lt;button </span>
-				<span class="code-attribute">class=</span>
-				<span class="code-attribute-value">"av-button-inactive"</span>
-				<span class="code-tag">&gt;&lt;/button&gt;</span>
-			</div>
+{{#code-block language='handlebars'}}
+&lt;button class="av-button-inactive"&gt;Inactive&lt;/button&gt;{{/code-block}}
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-3">
 		<div class="component-title">Secondary Button</div>
 		<div class="component-container">
 			<button class="av-button-secondary">Secondary</button>
-			<div class="code-text">
-				<span class="code-tag">&lt;button </span>
-				<span class="code-attribute">class=</span>
-				<span class="code-attribute-value">"av-button-secondary"</span>
-				<span class="code-tag">&gt;&lt;/button&gt;</span>
-			</div>
+{{#code-block language='handlebars'}}
+&lt;button class="av-button-secondary"&gt;Secondary&lt;/button&gt;{{/code-block}}
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="component-title">Icon Button</div>
+		<div class="component-container">
+			<button class="av-button-icon">{{fa-icon "trash-o"}}</button>
+{{#code-block language='handlebars'}}
+&lt;button class="av-button-secondary"&gt;&#123;&#123;fa-icon "trash-o"&#125;&#125;&lt;/button&gt;{{/code-block}}
 		</div>
 	</div>
 </div>

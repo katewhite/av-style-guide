@@ -17,6 +17,9 @@ module.exports = function(environment) {
     typekit: {
         kitId: 'kxg8llr'
     },
+    emberHighlightJs: {
+      style: 'solarized_light'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

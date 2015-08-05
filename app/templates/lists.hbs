@@ -4,69 +4,22 @@
 	<div class="av-list-container">
 		<h3 class="av-list-title">Title</h3>
 		<ul>
-			<li class="av-list-item">List Item 1</li>
-			<li class="av-list-item">List Item 2</li>
-			<li class="av-list-item">List Item 3</li>
-			<li class="av-list-item">List Item 4</li>
+			{{list-item content='List Item 1'}}
+			{{list-item content='List Item 2'}}
+			{{list-item content='List Item 3'}}
+			{{list-item content='List Item 4'}}
 		</ul>
 	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container"&gt;
+	&lt;h3 class="av-list-title"&gt;Title&lt;/h3&gt;
+	&lt;ul&gt;
+		&#123;&#123;list-item content='List Item 1'&#125;&#125;
+		&#123;&#123;list-item content='List Item 2'&#125;&#125;
+		&#123;&#123;list-item content='List Item 3'&#125;&#125;
+		&#123;&#123;list-item content='List Item 4'&#125;&#125;
+	&lt;/ul&gt;
+&lt;/div&gt;{{/code-block}}
 </div>
 
 <!-- Ungrouped, No Details, Actionable -->
@@ -78,334 +31,80 @@
 			<button class="av-button">Add Item</button>
 		</div>
 		<ul>
-			<li class="av-list-item">List Item 1</li>
-			<li class="av-list-item">List Item 2</li>
-			<li class="av-list-item">List Item 3</li>
-			<li class="av-list-item">List Item 4</li>
+			{{list-item content='List Item 1'}}
+			{{list-item content='List Item 2'}}
+			{{list-item content='List Item 3'}}
+			{{list-item content='List Item 4'}}
 		</ul>
 	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-title-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Add Item</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container"&gt;
+	&lt;div class="av-list-title-container"&gt;
+		&lt;h3 class="av-list-title"&gt;Title&lt;/h3&gt;
+		&lt;button class="av-button"&gt;Add Item&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;ul&gt;
+		&#123;&#123;list-item content='List Item 1'&#125;&#125;
+		&#123;&#123;list-item content='List Item 2'&#125;&#125;
+		&#123;&#123;list-item content='List Item 3'&#125;&#125;
+		&#123;&#123;list-item content='List Item 4'&#125;&#125;
+	&lt;/ul&gt;
+&lt;/div&gt;{{/code-block}}
 </div>
 
 <!-- Ungrouped, No Details, Actionable, Actionable List Items -->
 <div class="component-title">Ungrouped, No details, Actionable, Actionable List Items</div>
 	<div class="component-container">
-		<div class= "av-list-container" >
-			<div class= "av-list-title-container" >
-				<h3 class= "av-list-title" > Title </h3>
-				<button class= "av-button" > Add Item </button>
+		<div class="av-list-container" >
+			<div class="av-list-title-container" >
+				<h3 class="av-list-title" > Title </h3>
+				<button class="av-button" > Add Item </button>
 			</div>
 			<ul>
-				<li class= "av-list-item" >
-					<span> List Item 1 </span>
-					<div class= "button-container" >
-						<button class= "av-button-icon" > {{fa-icon "trash-o"}} </button>
-						<button class= "av-button-icon" > {{fa-icon "pencil"}} </button>
-					</div>
-				</li>
-				<li class= "av-list-item" >
-					<span> List Item 2 </span>
-					<div class= "button-container" >
-						<button class= "av-button-icon" > {{fa-icon "trash-o"}} </button>
-						<button class= "av-button-icon" > {{fa-icon "pencil"}} </button>
-					</div>
-				</li>
-				<li class= "av-list-item" >
-					<span> List Item 3 </span>
-					<div class= "button-container" >
-						<button class= "av-button-icon" > {{fa-icon "trash-o"}} </button>
-						<button class= "av-button-icon" > {{fa-icon "pencil"}} </button>
-					</div>
-				</li>
-				<li class= "av-list-item" >
-					<span> List Item 4 </span>
-					<div class= "button-container" >
-						<button class= "av-button-icon" > {{fa-icon "trash-o"}} </button>
-						<button class= "av-button-icon" > {{fa-icon "pencil"}} </button>
-					</div>
-				</li>
+				{{#list-item content='List Item 1'}}
+					<button class="av-button-icon" > {{fa-icon "trash-o"}} </button>
+					<button class="av-button-icon" > {{fa-icon "pencil"}} </button>
+				{{/list-item}}
+				{{#list-item content='List Item 2'}}
+					<button class="av-button-icon" > {{fa-icon "trash-o"}} </button>
+					<button class="av-button-icon" > {{fa-icon "pencil"}} </button>
+				{{/list-item}}
+				{{#list-item content='List Item 3'}}
+					<button class="av-button-icon" > {{fa-icon "trash-o"}} </button>
+					<button class="av-button-icon" > {{fa-icon "pencil"}} </button>
+				{{/list-item}}
+				{{#list-item content='List Item 4'}}
+					<button class="av-button-icon" > {{fa-icon "trash-o"}} </button>
+					<button class="av-button-icon" > {{fa-icon "pencil"}} </button>
+				{{/list-item}}
 			</ul>
 		</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-title-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Add Item</span>
-			<span class="code-tag">&lt;/button&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-
-		// li 1
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"button-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "trash-o"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "pencil"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 2
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"button-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "trash-o"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "pencil"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 3
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"button-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "trash-o"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "pencil"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 4
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"button-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "trash-o"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;button </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-button-icon"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "pencil"&#125;&#125;</span>
-			<span class="code-tag">&lt;/button&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container" &gt;
+	&lt;div class="av-list-title-container" &gt;
+		&lt;h3 class="av-list-title" &gt; Title &lt;/h3&gt;
+		&lt;button class="av-button" &gt; Add Item &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;ul&gt;
+		&#123;&#123;#list-item content='List Item 1'&#125;&#125;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "trash-o"&#125;&#125; &lt;/button&gt;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "pencil"&#125;&#125; &lt;/button&gt;
+		&#123;&#123;/list-item&#125;&#125;
+		&#123;&#123;#list-item content='List Item 2'&#125;&#125;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "trash-o"&#125;&#125; &lt;/button&gt;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "pencil"&#125;&#125; &lt;/button&gt;
+		&#123;&#123;/list-item&#125;&#125;
+		&#123;&#123;#list-item content='List Item 3'&#125;&#125;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "trash-o"&#125;&#125; &lt;/button&gt;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "pencil"&#125;&#125; &lt;/button&gt;
+		&#123;&#123;/list-item&#125;&#125;
+		&#123;&#123;#list-item content='List Item 4'&#125;&#125;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "trash-o"&#125;&#125; &lt;/button&gt;
+			&lt;button class="av-button-icon"&gt; &#123;&#123;fa-icon "pencil"&#125;&#125; &lt;/button&gt;
+		&#123;&#123;/list-item}}
+	&lt;/ul&gt;
+&lt;/div&gt;{{/code-block}}
 </div>
 
 <!-- Ungrouped, No Details, Checkable Items -->
@@ -414,226 +113,22 @@
 	<div class="av-list-container">
 		<h3 class="av-list-title">Title</h3>
 		<ul>
-			<li class="av-check-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox1"/>
-					<label for="checkbox1">{{fa-icon "check"}}</label>
-				</div>
-				<span>List Item 1</span>
-			</li>
-			<li class="av-check-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox2"/>
-					<label for="checkbox2">{{fa-icon "check"}}</label>
-				</div>
-				<span>List Item 2</span>
-			</li>
-			<li class="av-check-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox3"/>
-					<label for="checkbox3">{{fa-icon "check"}}</label>
-				</div>
-				<span>List Item 3</span>
-			</li>
-			<li class="av-check-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox4"/>
-					<label for="checkbox4">{{fa-icon "check"}}</label>
-				</div>
-				<span>List Item 4</span>
-			</li>
+			{{list-item content='List Item 1' checkable=true}}
+			{{list-item content='List Item 2' checkable=true}}
+			{{list-item content='List Item 3' checkable=true}}
+			{{list-item content='List Item 4' checkable=true}}
 		</ul>
 	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-
-		// li 1
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox1" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox1"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 2
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox2" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox2"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 3
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox3" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox3"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 4
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox4" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox4"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container"&gt;
+	&lt;h3 class="av-list-title"&gt;Title&lt;/h3&gt;
+	&lt;ul&gt;
+		&#123;&#123;list-item content='List Item 1' checkable=true&#125;&#125;
+		&#123;&#123;list-item content='List Item 2' checkable=true&#125;&#125;
+		&#123;&#123;list-item content='List Item 3' checkable=true&#125;&#125;
+		&#123;&#123;list-item content='List Item 4' checkable=true&#125;&#125;
+	&lt;/ul&gt;
+&lt;/div&gt;{{/code-block}}
 </div>
 
 
@@ -643,458 +138,56 @@
 	<div class="av-list-container">
 		<h3 class="av-list-title">Title</h3>
 		<ul>
-			<li class="av-check-list-item av-detail-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox5"/>
-					<label for="checkbox5">{{fa-icon "check"}}</label>
-				</div>
-				<div class="av-list-item-content">
-					<div class="av-list-item-main">
-						<span>List Item 1</span>
-					</div>
-					<div class="av-list-item-detail">
-						<span>Detail about the item</span>
-					</div>
-				</div>
-			</li>
-			<li class="av-check-list-item av-detail-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox6"/>
-					<label for="checkbox6">{{fa-icon "check"}}</label>
-				</div>
-				<div class="av-list-item-content">
-					<div class="av-list-item-main">
-						<span>List Item 2</span>
-					</div>
-					<div class="av-list-item-detail">
-						<span>Detail about the item</span>
-					</div>
-				</div>
-			</li>
-			<li class="av-check-list-item av-detail-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox7"/>
-					<label for="checkbox7">{{fa-icon "check"}}</label>
-				</div>
-				<div class="av-list-item-content">
-					<div class="av-list-item-main">
-						<span>List Item 3</span>
-					</div>
-					<div class="av-list-item-detail">
-						<span>Detail about the item</span>
-					</div>
-				</div>
-			</li>
-			<li class="av-check-list-item av-detail-list-item">
-				<div class="av-checkbox">
-					<input type="checkbox" id="checkbox8"/>
-					<label for="checkbox8">{{fa-icon "check"}}</label>
-				</div>
-				<div class="av-list-item-content">
-					<div class="av-list-item-main">
-						<span>List Item 4</span>
-					</div>
-					<div class="av-list-item-detail">
-						<span>Detail about the item</span>
-					</div>
-				</div>
-			</li>
+			{{list-item content='List Item 1' checkable=true detail='Detail about the item'}}
+			{{list-item content='List Item 2' checkable=true detail='Detail about the item'}}
+			{{list-item content='List Item 3' checkable=true detail='Detail about the item'}}
+			{{list-item content='List Item 4' checkable=true detail='Detail about the item'}}
 		</ul>
 	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-
-		// li 1
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item av-detail-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox5" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox5"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-content"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-main"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-detail"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">Detail about the item</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 2
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item av-detail-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox6" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox6"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-content"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-main"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-detail"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">Detail about the item</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 3
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item av-detail-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox7" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox7"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-content"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-main"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-detail"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">Detail about the item</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-
-		// li 4
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-check-list-item av-detail-list-item"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-checkbox"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;input </span>
-			<span class="code-attribute"> id=</span>
-			<span class="code-attribute-value">"checkbox8" </span>
-			<span class="code-attribute"> type=</span>
-			<span class="code-attribute-value">"checkbox"</span>
-			<span class="code-tag">/&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;label </span>
-			<span class="code-attribute"> for=</span>
-			<span class="code-attribute-value">"checkbox8"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">&#123;&#123;fa-icon "check"&#125;&#125;</span>
-			<span class="code-tag">&lt;/label&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-content"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-main"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item-detail"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-5">
-			<span class="code-tag">&lt;span&gt;</span>
-			<span class="code-content">Detail about the item</span>
-			<span class="code-tag">&lt;/span&gt;</span>
-		</div>
-		<div class="tab-4">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-3">
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div >
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container"&gt;
+	&lt;h3 class="av-list-title"&gt;Title&lt;/h3&gt;
+	&lt;ul&gt;
+		&#123;&#123;list-item content='List Item 1' checkable=true detail='Detail about the item'&#125;&#125;
+		&#123;&#123;list-item content='List Item 2' checkable=true detail='Detail about the item'&#125;&#125;
+		&#123;&#123;list-item content='List Item 3' checkable=true detail='Detail about the item'&#125;&#125;
+		&#123;&#123;list-item content='List Item 4' checkable=true detail='Detail about the item'&#125;&#125;
+	&lt;/ul&gt;
+&lt;/div&gt;{{/code-block}}
 </div>
 
 <!-- Grouped -->
 <div class="component-title">Grouped</div>
-<div class="component-container">
+<div class="component-container grouped-list">
 	<div class="av-list-container">
 		<h3 class="av-list-title">Title</h3>
-		{{#liquid-if isExpanded class="expanded"}}
-			<ul>
-				<li class="av-list-item">List Item 1</li>
-				<li class="av-list-item">List Item 2</li>
-				<li class="av-list-item">List Item 3</li>
-				<li class="av-list-item">List Item 4</li>
-			</ul>
-		{{/liquid-if}}
-		<ul>
-			<li class="av-list-item">List Item 1</li>
-			<li class="av-list-item">List Item 2</li>
-			<li class="av-list-item">List Item 3</li>
-			<li class="av-list-item">List Item 4</li>
-		</ul>
+		{{#expandable-list title="Users" icon="user"}}
+			{{list-item content="List Item 1a"}}
+			{{list-item content="List Item 2a"}}
+			{{list-item content="List Item 3a"}}
+			{{list-item content="List Item 4a"}}
+		{{/expandable-list}}
+		{{#expandable-list title="Groups" icon="group"}}
+			{{list-item content="List Item 1b"}}
+			{{list-item content="List Item 2b"}}
+			{{list-item content="List Item 3b"}}
+			{{list-item content="List Item 4b"}}
+		{{/expandable-list}}
 	</div>
-	<div class="code-text">
-		<div>
-			<span class="code-tag">&lt;div </span>
-			<span class="code-attribute">class=</span>
-			<span class="code-attribute-value">"av-list-container"</span>
-			<span class="code-tag">&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;h3 </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-title"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">Title</span>
-			<span class="code-tag">&lt;/h3&gt; </span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;ul&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 1</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 2</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 3</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-2">
-			<span class="code-tag">&lt;li </span>
-			<span class="code-attribute"> class=</span>
-			<span class="code-attribute-value">"av-list-item"</span>
-			<span class="code-tag">&gt;</span>
-			<span class="code-content">List Item 4</span>
-			<span class="code-tag">&lt;/li&gt;</span>
-		</div>
-		<div class="tab-1">
-			<span class="code-tag">&lt;/ul&gt;</span>
-		</div>
-		<div>
-			<span class="code-tag">&lt;/div&gt;</span>
-		</div>
-	</div>
+{{#code-block language='handlebars'}}
+&lt;div class="av-list-container"&gt;
+	&lt;h3 class="av-list-title"&gt;Title&lt;/h3&gt;
+	&#123;&#123;#expandable-list title="Users" icon="user"&#125;&#125;
+		&#123;&#123;list-item content="List Item 1a"&#125;&#125;
+		&#123;&#123;list-item content="List Item 2a"&#125;&#125;
+		&#123;&#123;list-item content="List Item 3a"&#125;&#125;
+		&#123;&#123;list-item content="List Item 4a"&#125;&#125;
+	&#123;&#123;/expandable-list&#125;&#125;
+	&#123;&#123;#expandable-list title="Groups" icon="group"&#125;&#125;
+		&#123;&#123;list-item content="List Item 1b"&#125;&#125;
+		&#123;&#123;list-item content="List Item 2b"&#125;&#125;
+		&#123;&#123;list-item content="List Item 3b"&#125;&#125;
+		&#123;&#123;list-item content="List Item 4b"&#125;&#125;
+	&#123;&#123;/expandable-list&#125;&#125;
+&lt;/div&gt;{{/code-block}}
 </div>

@@ -20,6 +20,31 @@
 		    margin-right: 15px;
 		}
 	}
+	.av-list-grouper {
+		margin-right: 15px;
+	    margin-left: 15px;
+	    padding-bottom: 10px;
+	    padding-top: 10px;
+	    cursor: pointer;
+	    .av-list-grouper-title {
+	    	display: inline-block;
+	    	i {
+	    		color: $blue-text;
+	    	}
+	    }
+	    i, span {
+	    	font-size: 18px;
+	    	font-weight: 500;
+	    }
+	    .liquid-container {
+	    	float: right;
+	    	display: inline-block;
+	    	.fa-chevron-up, .fa-chevron-down {
+	    		font-size: 20px;
+	    		padding-top: 2px;
+		    }
+		}
+	}
 	ul {
 		list-style: none;
 		margin-left: 15px;
@@ -62,6 +87,9 @@
 			}
 			.av-checkbox {
 				top: -10px;
+			}
+			.button-container {
+				margin-top: 10px;
 			}
 		}
 	}
