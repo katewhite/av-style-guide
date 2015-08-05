@@ -21,5 +21,6 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
   app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.min.css');
+  app.import(app.bowerDirectory + '/prism/prism.js');
   return app.toTree();
 };
