@@ -8,8 +8,8 @@ export default Ember.Component.extend({
 	    return Math.floor((1 + Math.random()) * 0x10000)
 	      .toString(16)
 	      .substring(1);
-	  }
-	  this.set("uniqueId", s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-	    s4() + '-' + s4() + s4() + s4());
+		};
+		this.set("uniqueId", s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+			s4() + '-' + s4() + s4() + s4());
 	})
 });
