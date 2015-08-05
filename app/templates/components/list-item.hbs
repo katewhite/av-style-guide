@@ -1,0 +1,30 @@
+{{#if detail}}
+	<li {{bind-attr class=":av-list-item :av-detail-list-item checkable:av-check-list-item"}}>
+		{{#if checkable}}
+			{{av-checkbox}}
+		{{/if}}
+		<div class="av-list-item-content">
+			<div class="av-list-item-main">
+				<span>{{content}}</span>
+			</div>
+			<div class="av-list-item-detail">
+				<span>{{detail}}</span>
+			</div>
+		</div>
+		<div class="button-container" >
+			{{yield}}
+		</div>
+	</li>
+{{else}}
+	<li {{bind-attr class=":av-list-item checkable:av-check-list-item"}}>
+		{{#if checkable}}
+			{{av-checkbox}}
+		{{/if}}
+		<span>{{content}}</span>
+		<div class="button-container" >
+			{{yield}}
+		</div>
+	</li>
+{{/if}}
+
+

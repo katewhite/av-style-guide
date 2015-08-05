@@ -1,0 +1,88 @@
+<div class="av-components">
+	<div class="component-title">av-checkbox<span class="code-highlight">.av-checkbox</span></div>
+	<div class="component-container">
+		{{av-checkbox}}
+		{{#code-block language='handlebars'}}&#123;&#123;av-checkbox&#125;&#125;{{/code-block}}
+	</div>
+
+	<div class="component-title">list-item</div>
+	<div class="component-container list-item">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{list-item content='List Item'}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}&#123;&#123;list-item content='List Item'&#125;&#125;{{/code-block}}
+			</div>
+
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{list-item content='List Item' checkable=true}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}&#123;&#123;list-item content='List Item' checkable=true&#125;&#125;{{/code-block}}
+			</div>
+
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{#list-item content='List Item'}}
+							<button class="av-button-icon" > {{fa-icon "trash-o"}} </button>
+							<button class="av-button-icon" > {{fa-icon "pencil"}} </button>
+						{{/list-item}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}
+		&#123;&#123;#list-item content='List Item'&#125;&#125;
+			&lt;button class="av-button-icon"&gt;&#123;&#123;fa-icon "trash-o"&#125;&#125;&lt;/button&gt;
+			&lt;button class="av-button-icon"&gt;&#123;&#123;fa-icon "pencil"&#125;&#125;&lt;/button&gt;
+		&#123;&#123;/list-item&#125;&#125;&#125;&#125;{{/code-block}}
+			</div>
+		</div>
+		<div class="row list-item">
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{list-item content='List Item' detail='Details about this list item'}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}&#123;&#123;list-item content='List Item' detail='Details about this list item'&#125;&#125;{{/code-block}}
+			</div>
+
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{list-item content='List Item' detail='Details about this list item' checkable=true}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}&#123;&#123;list-item content='List Item' detail='Details about this list item' checkable=true&#125;&#125;{{/code-block}}
+			</div>
+
+			<div class="col-md-4">
+				<div class="av-list-container">
+					<ul>
+						{{#list-item content='List Item' detail='Details about this list item'}}
+							<button class="av-button-icon">{{fa-icon "trash-o"}} </button>
+							<button class="av-button-icon">{{fa-icon "pencil"}} </button>
+						{{/list-item}}
+					</ul>
+				</div>
+		{{#code-block language='handlebars'}}
+		&#123;&#123;#list-item content='List Item' detail='Details about this list item'&#125;&#125;
+			&lt;button class="av-button-icon"&gt;&#123;&#123;fa-icon "trash-o"&#125;&#125;&lt;/button&gt;
+			&lt;button class="av-button-icon"&gt;&#123;&#123;fa-icon "pencil"&#125;&#125;&lt;/button&gt;
+		&#123;&#123;/list-item&#125;&#125;&#125;&#125;{{/code-block}}
+			</div>
+		</div>
+	</div>
+
+	<div class="component-title">expandable-list</div>
+	<div class="component-container expandable-list">
+		
+	</div>
+</div>
+
+

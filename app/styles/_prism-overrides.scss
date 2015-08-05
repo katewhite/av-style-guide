@@ -1,0 +1,57 @@
+$content-punctuation: #666666;
+$tags: #066b8c;
+$attributes: #869900;
+$attribute-values: #ca4916;
+$hbs-name: #129d77;
+
+// $content-punctuation: #666666;
+// $tags: #d08770;
+// $attributes: #a3be8c;
+// $attribute-values: #b48ead;
+// $hbs-name: #67b0b8;
+
+.token.punctuation {
+	color: $content-punctuation;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: $tags;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: $attributes;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: $attribute-values;
+}
+
+.token.handlebars {
+	.token.variable,
+	.token.punctuation,
+	.token.string, 
+	.token.boolean {
+		color: $content-punctuation;
+	}
+
+	.token.keyword {
+		color: $hbs-name;
+	}
+
+	.token.delimiter.punctuation + .token.variable {
+		color: $hbs-name;
+	}
+}

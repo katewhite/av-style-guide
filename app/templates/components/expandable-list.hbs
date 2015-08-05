@@ -1,0 +1,16 @@
+<div class="av-list-grouper" {{action 'toggleExpanded'}}>
+	<div class="av-list-grouper-title">
+		{{fa-icon icon}}
+		<span>{{title}}</span>
+	</div>
+	{{#liquid-if isExpanded class="chevron-up"}}
+		{{fa-icon "chevron-up"}}
+	{{else}}	
+		{{fa-icon "chevron-down"}}
+	{{/liquid-if}}
+</div>
+{{#liquid-if isExpanded class="expanded"}}
+<ul>
+	{{yield}}
+</ul>
+{{/liquid-if}}
