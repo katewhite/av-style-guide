@@ -1,5 +1,5 @@
 {{#if detail}}
-	<li {{bind-attr class=":av-list-item :av-detail-list-item checkable:av-check-list-item"}}>
+	<li class="av-list-item av-detail-list-item {{if checkable 'av-check-list-item'}}">
 		{{#if checkable}}
 			{{av-checkbox}}
 		{{/if}}
@@ -16,7 +16,7 @@
 		</div>
 	</li>
 {{else}}
-	<li {{bind-attr class=":av-list-item checkable:av-check-list-item"}}>
+	<li class="av-list-item {{if checkable 'av-check-list-item'}}">
 		{{#if checkable}}
 			{{av-checkbox}}
 		{{/if}}
