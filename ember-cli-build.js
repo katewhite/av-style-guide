@@ -22,5 +22,20 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.min.css');
   app.import(app.bowerDirectory + '/prism/prism.js');
+  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.eot', {
+    destDir: 'fonts'
+  });
+  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.svg', {
+    destDir: 'fonts'
+  });
+  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf', {
+    destDir: 'fonts'
+  });
+  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.woff', {
+    destDir: 'fonts'
+  });
+  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.woff2', {
+    destDir: 'fonts'
+  });
   return app.toTree();
 };
