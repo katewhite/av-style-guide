@@ -6,8 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('colors');
-  this.route('color');
+  this.route('toolbarItems', { path: '/' });
 });
 
 export default Router;

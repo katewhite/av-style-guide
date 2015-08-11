@@ -1,0 +1,25 @@
+<div class="assigned-items">
+	<div class="av-list-container">
+		<h3 class="av-list-title">Available Items</h3>
+		<ul>
+		  {{#each model key="id" as |item|}}
+		    {{#draggable-item content=item.id}}
+		      {{list-item content=item.name}}
+		    {{/draggable-item}}
+		  {{/each}}
+	  	</ul>
+	</div>
+</div>
+
+<div class="available-items">
+  {{#draggable-dropzone dropped="addToolbarItem"}}
+  	<div class="av-list-container">
+		<h3 class="av-list-title">Drop Zone</h3>
+		<ul>
+			{{#each assignedToolbarItems key="id" as |assignedItem|}}
+				{{list-item content=assignedItem.name}}
+			{{/each}}
+		</ul>
+	</div>
+  {{/draggable-dropzone}}
+</div>
